@@ -1,0 +1,17 @@
+body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+#myCanvas {
+    border: 2px solid #000;
+    max-width: 100%;
+    height: auto;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}

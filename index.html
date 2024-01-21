@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rzut Ukośny</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-3">
+        <div class="row">
+            
+            <div class="col-md-8">
+                <canvas id="myCanvas" width="800" height="400"></canvas>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center">
+                <p class="mr-3">Aktualna odległość: <span id="distanceValue">0</span> m</p>
+                <p>Aktualna wysokość: <span id="heightValueDisplay">0</span> m</p>
+            </div>
+            <div class="col-md-4">
+                <div class="slider-container my-3">
+                    <label for="speedSlider" class="form-label">Prędkość początkowa (v0): <span id="speedValue">50</span> m/s</label>
+                    <input type="range" class="form-range" min="10" max="100" value="50" id="speedSlider">
+                </div>
+                <div class="slider-container my-3">
+                    <label for="angleSlider" class="form-label">Kąt (θ): <span id="angleValue">45</span> stopni</label>
+                    <input type="range" class="form-range" min="0" max="90" value="45" id="angleSlider">
+                </div>
+                <div class="slider-container my-3">
+                    <label for="heightSlider" class="form-label">Wysokość początkowa: <span id="heightValue">0</span> metrów</label>
+                    <input type="range" class="form-range" min="0" max="200" value="0" id="heightSlider">
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <button id="pauseButton" class="btn btn-primary mt-2">Pauza/Wznów</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
